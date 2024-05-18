@@ -6,9 +6,7 @@ const banner = document.querySelector('.banner');
 const publishBtn = document.querySelector('.publish-btn');
 const uploadInput = document.querySelector('#image-upload');
 // Thay thế khu vực văn bản bằng phiên bản CKEditor
-const blogTitleEditor = CKEditor.create('textarea.title'); // Giả sử 'title' là lớp cho khu vực văn bản tiêu đề blog
-const articleEditor = CKEditor.create('textarea.article'); // Giả sử 'article' là lớp cho khu vực văn bản nội dung blog
-
+const editor = CKEDITOR.replace('article-editor');
 
 // Biến lưu đường dẫn banner
 let bannerPath;

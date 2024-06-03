@@ -69,7 +69,7 @@ function deleteBlog(id) {
 // Hàm kiểm tra xem người dùng có quyền xóa bài viết
 function userHasPermissionToDelete(blogAuthorUID) {
     const currentUser = auth.currentUser;
-    if (currentUser && (currentUser.uid === 'Azit1ls3YPW7OwfqsyUN1ePrwzl1' || blogAuthorUID === currentUser.uid)) {
+    if (currentUser && (currentUser.uid === 'LHB7YX0RXJSPwC71xBNSQCmUXvR2' || blogAuthorUID === currentUser.uid)) {
         return true; // Người dùng có quyền xóa
     }
     return false; // Người dùng không có quyền xóa

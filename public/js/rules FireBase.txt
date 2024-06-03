@@ -202,3 +202,15 @@ function deleteBlog(id) {
 
 https://www.youtube.com/watch?v=Ez7e99RS_jw
 triển khai web lên hosting firebase
+
+
+function isUserLHB7YX0RXJSPwC71xBNSQCmUXvR2() {
+  return request.auth.uid == 'LHB7YX0RXJSPwC71xBNSQCmUXvR2';
+}
+
+// Cho phép tất cả người dùng đọc tài liệu
+match /blogs/{blogId} {
+  allow read: if true;
+  allow create: if isSignedIn();
+  allow update, delete: if isSignedIn() && isUserLHB7YX0RXJSPwC71xBNSQCmUXvR2();
+}

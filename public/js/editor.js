@@ -5,8 +5,6 @@ const bannerImage = document.querySelector('#banner-upload');
 const banner = document.querySelector('.banner');
 const publishBtn = document.querySelector('.publish-btn');
 const uploadInput = document.querySelector('#image-upload');
-// Thay thế khu vực văn bản bằng phiên bản CKEditor
-const editor = CKEDITOR.replace('article-editor');
 
 // Biến lưu đường dẫn banner
 let bannerPath;
